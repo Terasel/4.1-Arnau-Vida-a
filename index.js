@@ -1,7 +1,8 @@
 const express = require("express"),
   config = require("./app"),
   path = require("path");
-(app = express()), (dotenv = require("dotenv").config());
+  app = express(),
+  dotenv = require("dotenv").config();
 
 app = config(app);
 app.set("port", process.env.PORT || 5000);
@@ -20,5 +21,5 @@ mongoose.connection.on("error", (err) => {
 });
 
 const server = app.listen(app.get("port"), () => {
-  console.log("Server up: http://localhost:" + app.get("port"));
+  console.log("Servidor en actiu: http://localhost:" + app.get("port"));
 });
