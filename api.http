@@ -1,1 +1,13 @@
-http://localhost:3000/api/diaries
+GET http://localhost:3000/api/tasks
+
+###
+
+POST http://localhost:3000/api/tasks HTTP/1.1
+content-type: application/json
+
+{
+  "completion": "complete",
+  "task": "These aren't the droids you're looking for"
+}
+
+###

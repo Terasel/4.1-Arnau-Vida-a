@@ -1,7 +1,7 @@
 import express from 'express'
 
 
-import diaryRouter from './routes/diaries'
+import taskRouter from './routes/tasks'
 
 const app = express()
 app.use(express.json())
@@ -13,7 +13,7 @@ app.get('/ping', (_req, res) => {
     res.send('pong')
 })
 
-app.use('/api/diaries', diaryRouter)
+app.use('/api/tasks', taskRouter)
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
