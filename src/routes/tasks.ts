@@ -29,4 +29,14 @@ router.post('/', (req, res) => {
 
 })
 
+router.delete('/:id', (req, res) => {
+    
+})
+
+router.put('/:id', (req, res) => {
+    const updatedTask = toNewTask(req.body)
+
+    
+})
+
 export default router

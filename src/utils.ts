@@ -1,5 +1,5 @@
 import { NewTask } from "./types";
-import { Completion } from './enums'
+
 
 const parseTask = (taskFromRequest: any): string => {
     if (!isString(taskFromRequest)) {
@@ -9,8 +9,8 @@ const parseTask = (taskFromRequest: any): string => {
     return taskFromRequest
 }
 
-const parseCompletion = (completionFromRequest: any): Completion => {
-    if (!isString(completionFromRequest) || !isComplete(completionFromRequest)) {
+const parseCompletion = (completionFromRequest: any): boolean => {
+    if (completionFromRequest != Boolean) {
         throw new Error('Incorrect or missing Completion status')
     }
 
@@ -22,10 +22,6 @@ const isString = (string: string): boolean => {
     return typeof string === 'string'
 }
 
-
-const isComplete = (param: any): boolean => {
-    return Object.values(Completion).includes(param)
-}
 
 const toNewTask = (object: any): NewTask => {
     const newEntry: NewTask = {

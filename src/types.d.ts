@@ -1,8 +1,8 @@
-import { Completion } from './enums'
+
 
 export interface Task {
     id: number
-    completion: Completion
+    completion: boolean
     task: string
 }
 
