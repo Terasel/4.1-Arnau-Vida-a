@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "completion": "incomplete",
+        "completion": true,
         "task": "Actually create the damn REST API"
     }
 ]
