@@ -1,9 +1,8 @@
 import express from 'express'
-
-
 import taskRouter from './routes/tasks'
 
 const app = express()
+
 app.use(express.json())
 
 const PORT = 3000

@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 77
+ETag: W/"4d-AZtc7R3yYc+wTmMwa46qfueQY+c"
+Date: Tue, 16 Jul 2024 11:51:26 GMT
+Connection: close
+
+{"id":3,"completion":false,"task":"A full commitment's what I'm thinking of"}

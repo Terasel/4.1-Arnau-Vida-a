@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 424
+ETag: W/"1a8-U0SrmwqHXBJoeW0ELNzDNJm0H50"
+Date: Tue, 16 Jul 2024 11:57:22 GMT
+Connection: close
+
+[{"id":1,"completion":false,"task":"We're no strangers to love"},{"id":2,"completion":true,"task":"You know the rules and so do I"},{"id":3,"completion":false,"task":"A full commitment's what I'm thinking of"},{"id":4,"completion":true,"task":"You wouldn't get this from any other guy"},{"id":5,"completion":false,"task":"I just wanna tell you how I'm feeling"},{"id":6,"completion":true,"task":"Gotta make you understand"}]
