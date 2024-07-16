@@ -10,7 +10,7 @@ const parseTask = (taskFromRequest: any): string => {
 }
 
 const parseCompletion = (completionFromRequest: any): boolean => {
-    if (completionFromRequest != Boolean) {
+    if (!isBoolean(completionFromRequest)) {
         throw new Error('Incorrect or missing Completion status')
     }
 
@@ -20,6 +20,10 @@ const parseCompletion = (completionFromRequest: any): boolean => {
 
 const isString = (string: string): boolean => {
     return typeof string === 'string'
+}
+
+const isBoolean = (boolean: boolean): boolean => {
+    return typeof boolean === 'boolean'
 }
 
 
