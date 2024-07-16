@@ -33,15 +33,17 @@ export const addTask = (newTask: NewTask): Task => {
     return newTaskText
 }
 
-export const updateTask = (id: number) => {
+export const updateTask = (id: number): Task | undefined => {
     const updatedTask = tasks.find(d => d.id === id)
-
-    if (updatedTask.completion = false) {
-        return
+    if (updatedTask != null) {
+        updatedTask.completion = true
     }
-    return undefined
+    return updatedTask
 }
 
-export const deleteTask = () => {
-
+export const deleteTask = (id: number) => {
+    const deletedTask = tasks.findIndex(d => d.id === id)
+    if (deletedTask !== -1) {
+        tasks.splice(deletedTask, 1)
+    }
 }
