@@ -12,7 +12,7 @@ app.get('/ping', (_req, res) => {
     console.log('someone pinged here');
     res.send('pong');
 });
-app.use('/api/diaries', tasks_1.default);
+app.use('/api/tasks', tasks_1.default);
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
